@@ -23,6 +23,8 @@ function wp_media_categories_register_media_taxonomy() {
 		'show_in_nav_menus'		=> false,
 		'query_var'				=> true,
 		'update_count_callback'	=> 'wp_media_categories_update_count_callback',
+		'show_in_rest'          => true,
+		'rest_base'             => 'media-categories',
 		'labels'                => array(
 			'name'				=> __( 'Categories',        'wp-media-categories' ),
 			'singular_name'		=> __( 'Category',          'wp-media-categories' ),
